@@ -1,49 +1,43 @@
 <template>
   <q-page class="row items-center justify-evenly">
-    <example-component
-      title="Example component"
-      active
-      :todos="todos"
-      :meta="meta"
-    ></example-component>
+    <q-card class="my-card" flat>
+      <q-card-section horizontal>
+        <q-card-section class="q-pt-xs">
+          <div class="text-overline">Perfil</div>
+          <div class="text-h5 q-mt-sm q-mb-xs">Juan Pablo Hurtado Ramirez</div>
+          <div class="text-grey">
+            Dame un reto; lo lloraré y odiaré, lo abrazaré y amaré, lo
+            destrozaré y finalmente lo incorporaré en mí y me haré más fuerte.
+            Al final lo olvidaré.
+          </div>
+        </q-card-section>
+
+        <q-card-section class="col-5 flex flex-center">
+          <q-img
+            class="rounded-borders"
+            src="https://cdn.quasar.dev/img/parallax2.jpg"
+          />
+        </q-card-section>
+      </q-card-section>
+
+      <q-separator />
+
+      <q-card-actions>
+        <q-btn flat round icon="event" />
+        <q-btn flat> 7:30PM </q-btn>
+        <q-btn flat color="primary"> Reserve </q-btn>
+      </q-card-actions>
+    </q-card>
   </q-page>
 </template>
 
 <script lang="ts">
-import { Todo, Meta } from 'components/models';
-import ExampleComponent from 'components/ExampleComponent.vue';
-import { defineComponent, ref } from 'vue';
+import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'IndexPage',
-  components: { ExampleComponent },
-  setup () {
-    const todos = ref<Todo[]>([
-      {
-        id: 1,
-        content: 'ct1'
-      },
-      {
-        id: 2,
-        content: 'ct2'
-      },
-      {
-        id: 3,
-        content: 'ct3'
-      },
-      {
-        id: 4,
-        content: 'ct4'
-      },
-      {
-        id: 5,
-        content: 'ct5'
-      }
-    ]);
-    const meta = ref<Meta>({
-      totalCount: 1200
-    });
-    return { todos, meta };
-  }
+  setup() {
+    return {};
+  },
 });
 </script>
