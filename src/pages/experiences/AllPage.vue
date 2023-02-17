@@ -1,18 +1,37 @@
 <template>
-  <q-page class="row items-center">
-    <div class="q-px-lg q-pb-md">
-      <q-timeline :layout="layout" color="secondary">
+  <q-page class="row items-center justify-evenly">
+    <q-card class="my-card">
+      <video
+        width="700"
+        src="~/src/assets/video/espera-video.mp4"
+        controls
+        autoplay
+        loop
+      ></video>
+
+      <q-card-section class="text-center">
+        <div class="text-h6">
+          <q-chip
+            color="red"
+            text-color="white"
+            icon="alarm"
+            label="Aun estoy construyendo, pero puedes esperar..."
+          />
+        </div>
+      </q-card-section>
+    </q-card>
+    <!-- <q-timeline :layout="layout" color="secondary">
         <q-timeline-entry heading>
-          Timeline heading
-          <br />
-          ({{
-            $q.screen.lt.sm
-              ? 'Dense'
-              : $q.screen.lt.md
-              ? 'Comfortable'
-              : 'Loose'
-          }}
-          layout)
+          Aun no termino,pero puedes esperar un poco :D ..
+          <q-btn
+            href="https://www.youtube.com/watch?v=w7XIg34JGIw&ab_channel=Mipon"
+            target="_blank"
+            flat
+            round
+            icon="fa-solid fa-hammer"
+            color="primary"
+          />
+          .
         </q-timeline-entry>
 
         <q-timeline-entry
@@ -131,8 +150,7 @@
             culpa qui officia deserunt mollit anim id est laborum.
           </div>
         </q-timeline-entry>
-      </q-timeline>
-    </div>
+      </q-timeline> -->
   </q-page>
 </template>
 

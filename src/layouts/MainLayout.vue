@@ -41,29 +41,25 @@ import EssentialLink from 'components/EssentialLink.vue';
 
 const linksList = [
   {
-    title: 'Perfil',
-    caption: 'github.com/quasarframework',
+    title: 'Acerca de mí',
     icon: 'account_circle',
     link: '#/',
   },
   {
     title: 'Experiencia',
-    caption: '',
     icon: 'engineering',
     link: '#/experiences',
   },
   {
     title: 'Certificados',
-    caption: 'quasar.dev',
     icon: 'school',
-    link: 'https://quasar.dev',
+    link: '#/',
   },
 
   {
     title: 'Proyectos',
-    caption: 'github.com/quasarframework',
     icon: 'flag',
-    link: 'https://github.com/quasarframework',
+    link: '#/',
   },
 ];
 

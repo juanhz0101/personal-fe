@@ -2,31 +2,54 @@
   <q-page class="row items-center justify-evenly">
     <q-card class="my-card" flat>
       <q-card-section horizontal>
-        <q-card-section class="q-pt-xs">
-          <div class="text-overline">Perfil</div>
+        <q-img
+          width="70%"
+          class="rounded-borders"
+          src="~/src/assets/images/profile.png"
+        />
+        <q-card-section class="q-pt-md">
+          <div class="text-overline">Acerca de mí</div>
           <div class="text-h5 q-mt-sm q-mb-xs">Juan Pablo Hurtado Ramirez</div>
           <div class="text-grey">
             Dame un reto; lo lloraré y odiaré, lo abrazaré y amaré, lo
             destrozaré y finalmente lo incorporaré en mí y me haré más fuerte.
             Al final lo olvidaré.
           </div>
-        </q-card-section>
-
-        <q-card-section class="col-5 flex flex-center">
-          <q-img
-            class="rounded-borders"
-            src="https://cdn.quasar.dev/img/parallax2.jpg"
+          <q-btn
+            href="https://github.com/juanhz0101"
+            target="_blank"
+            flat
+            round
+            icon="fa-brands fa-github"
+            color="primary"
+          />
+          <q-btn
+            href="https://www.linkedin.com/in/juanpablohz"
+            target="_blank"
+            flat
+            round
+            icon="fa-brands fa-linkedin"
+            color="primary"
+          />
+          <q-btn
+            href="https://twitter.com/juanhz0101"
+            target="_blank"
+            flat
+            round
+            icon="fa-brands fa-twitter"
+            color="primary"
+          />
+          <q-btn
+            href="https://www.instagram.com/juanpablohz0101/"
+            target="_blank"
+            flat
+            round
+            icon="fa-brands fa-instagram"
+            color="primary"
           />
         </q-card-section>
       </q-card-section>
-
       <q-separator />
-
-      <q-card-actions>
-        <q-btn flat round icon="event" />
-        <q-btn flat> 7:30PM </q-btn>
-        <q-btn flat color="primary"> Reserve </q-btn>
-      </q-card-actions>
     </q-card>
   </q-page>
 </template>
