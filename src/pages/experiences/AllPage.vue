@@ -15,7 +15,7 @@
             color="red"
             text-color="white"
             icon="alarm"
-            label="Aun estoy construyendo, pero puedes esperar..."
+            label="Aun estoy construyendo, pero puedes esperar"
           />
         </div>
       </q-card-section>
