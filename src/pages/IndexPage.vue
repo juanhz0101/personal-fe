@@ -8,12 +8,10 @@
           src="~/src/assets/images/profile.png"
         />
         <q-card-section class="q-pt-md">
-          <div class="text-overline">Acerca de mí</div>
+          <div class="text-overline">{{ $t('menu.about_me') }}</div>
           <div class="text-h5 q-mt-sm q-mb-xs">Juan Pablo Hurtado Ramirez</div>
-          <div class="text-grey">
-            Dame un reto; lo lloraré y odiaré, lo abrazaré y amaré, lo
-            destrozaré y finalmente lo incorporaré en mí y me haré más fuerte.
-            Al final lo olvidaré.
+          <div class="text-h6 text-grey">
+            {{ $t('about_me.message') }}
           </div>
           <q-btn
             href="https://github.com/juanhz0101"

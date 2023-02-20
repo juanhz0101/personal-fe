@@ -1,25 +1,7 @@
 <template>
   <q-page class="row items-center justify-evenly">
-    <q-card class="my-card">
-      <video
-        width="700"
-        src="~/src/assets/video/espera-video.mp4"
-        controls
-        autoplay
-        loop
-      ></video>
+    <in-construction />
 
-      <q-card-section class="text-center">
-        <div class="text-h6">
-          <q-chip
-            color="red"
-            text-color="white"
-            icon="alarm"
-            label="Aun estoy construyendo, pero puedes esperar"
-          />
-        </div>
-      </q-card-section>
-    </q-card>
     <!-- <q-timeline :layout="layout" color="secondary">
         <q-timeline-entry heading>
           Aun no termino,pero puedes esperar un poco :D ..
@@ -156,10 +138,12 @@
 
 <script lang="ts">
 import { useQuasar } from 'quasar';
-import { computed, defineComponent, ref } from 'vue';
+import { computed, defineComponent } from 'vue';
+import InConstruction from 'src/components/InConstruction.vue';
 
 export default defineComponent({
-  name: 'AllPage',
+  components: { InConstruction },
+  name: 'ExperiencesAllPage',
   setup() {
     const $q = useQuasar();
 
