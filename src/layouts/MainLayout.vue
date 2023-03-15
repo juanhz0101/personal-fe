@@ -80,7 +80,7 @@ export default defineComponent({
         icon: 'account_circle',
         link: '#/',
       },
-      {
+      /*{
         title: 'menu.experience',
         icon: 'engineering',
         link: '#/experience',
@@ -94,7 +94,7 @@ export default defineComponent({
         title: 'menu.projects',
         icon: 'flag',
         link: '#/projects',
-      },
+      },*/
     ];
 
     return {
